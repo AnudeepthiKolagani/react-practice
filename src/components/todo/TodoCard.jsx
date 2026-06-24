@@ -1,5 +1,5 @@
 import axios from "axios";
-import { Check, Edit, Timer, Trash } from "lucide-react";
+import { Check, CheckCircleIcon, Edit, Timer, Trash } from "lucide-react";
 
 export const TodoCard = ({ todo, setTodos }) => {
   const API_URL = import.meta.env.VITE_API_URL;
@@ -16,6 +16,7 @@ export const TodoCard = ({ todo, setTodos }) => {
     >
       <div className="flex flex-row justify-between items-center">
         <h3 className="text-base font-bold truncate">{todo.title}</h3>
+        {/* TODO: Update todo task */}
         <button className="cursor-pointer">
           <Edit size={20} />
         </button>
@@ -44,6 +45,8 @@ export const TodoCard = ({ todo, setTodos }) => {
         >
           <Trash size={20} />
         </button>
+        {/* TODO: Mark as complete */}
+        {todo.status !== "completed" && <CheckCircleIcon size={20} />}
       </div>
     </div>
   );
