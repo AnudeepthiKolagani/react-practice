@@ -1,10 +1,10 @@
 import "./App.css";
+import { Header } from "./components/Header";
 
 function App() {
-
   return (
-    <div className="text-red-700 font-bold text-center">
-      Welcome to React Pratice
+    <div className="mx-20 my-5">
+      <Header />
     </div>
   );
 }
