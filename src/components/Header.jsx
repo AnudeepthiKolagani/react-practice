@@ -4,6 +4,7 @@ const headerValues = [
   { path: "/counter", value: "Counter" },
   { path: "/todo", value: "Todo" },
   { path: "/accordion", value: "Accordion" },
+  { path: "/timer", value: "Timer" },
 ];
 export const Header = () => {
   return (
