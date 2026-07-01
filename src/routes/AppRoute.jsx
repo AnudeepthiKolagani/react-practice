@@ -5,6 +5,7 @@ import { Todo } from "../pages/Todo.page";
 import { Accordion } from "../pages/Accordion.page";
 import { TimePage } from "../pages/Time.page";
 import { BasicLayout } from "../layout/Basics.Layout";
+import { Debounce } from "../pages/Debounce.page";
 
 export const AppRoute = () => {
   return (
@@ -17,6 +18,7 @@ export const AppRoute = () => {
             <Route path="/todo" element={<Todo />} />
             <Route path="/accordion" element={<Accordion />} />
             <Route path="/timer" element={<TimePage />} />
+            <Route path="/debounce" element={<Debounce />} />
           </Route>
         </Route>
       </Routes>
