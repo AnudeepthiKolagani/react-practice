@@ -5,6 +5,7 @@ const headerValues = [
   { path: "/todo", value: "Todo" },
   { path: "/accordion", value: "Accordion" },
   { path: "/timer", value: "Timer" },
+  { path: "/debounce", value: "Debounce" },
 ];
 export const BasicsHeader = () => {
   return (
